@@ -22,6 +22,10 @@ public class VenteServiceApplication {
         return args -> {
             venteRepository.save(Vente.builder()
                     .idp(1).ida(1).quantite(50).build());
+            venteRepository.save(Vente.builder()
+                    .idp(1).ida(2).quantite(50).build());
+            venteRepository.save(Vente.builder()
+                    .idp(2).ida(1).quantite(50).build());
         };
     }
 
